@@ -50,10 +50,10 @@ namespace DIO.Bank
         public override string ToString()
         {
             string retorno = "";
-            retorno += "TipoConta " + this.TipoConta + " | ";
-            retorno += "Nome " + this.Nome + " | ";
-            retorno += "Saldo " + this.Saldo + " | ";
-            retorno += "Limite " + this.Limite + " | ";
+            retorno += "TipoConta: " + this.TipoConta + " | ";
+            retorno += "Nome: " + this.Nome + " | ";
+            retorno += "Saldo: " + this.Saldo + " | ";
+            retorno += "Limite: " + this.Limite + " | ";
             return retorno;
         }
     }
