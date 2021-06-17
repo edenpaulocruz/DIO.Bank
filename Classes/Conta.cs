@@ -52,8 +52,9 @@ namespace DIO.Bank
             string retorno = "";
             retorno += "TipoConta: " + this.TipoConta + " | ";
             retorno += "Nome: " + this.Nome + " | ";
-            retorno += "Saldo: " + this.Saldo + " | ";
-            retorno += "Limite: " + this.Limite + " | ";
+            retorno += "Saldo disponível: R$ " + (this.Saldo + this.Limite).ToString("N2") + " | ";
+            retorno += "Saldo líquido: R$ " + this.Saldo.ToString("N2") + " | ";
+            retorno += "Limite: R$ " + this.Limite.ToString("N2") + " | ";
             return retorno;
         }
     }
